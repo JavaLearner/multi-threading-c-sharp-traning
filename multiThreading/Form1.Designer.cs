@@ -1,6 +1,6 @@
 ﻿namespace multiThreading
 {
-    partial class Form1
+    partial class ThreadForm
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.btnRed = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnBlue = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnRed
@@ -40,25 +40,26 @@
             this.btnRed.TabIndex = 0;
             this.btnRed.Text = "Red";
             this.btnRed.UseVisualStyleBackColor = true;
+            this.btnRed.Click += new System.EventHandler(this.btnRed_Click);
             // 
-            // button2
+            // btnBlue
             // 
-            this.button2.Location = new System.Drawing.Point(93, 12);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnBlue.Location = new System.Drawing.Point(93, 12);
+            this.btnBlue.Name = "btnBlue";
+            this.btnBlue.Size = new System.Drawing.Size(75, 23);
+            this.btnBlue.TabIndex = 1;
+            this.btnBlue.Text = "Blue";
+            this.btnBlue.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // ThreadForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(629, 343);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnBlue);
             this.Controls.Add(this.btnRed);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "ThreadForm";
+            this.Text = "ThreadForm";
             this.ResumeLayout(false);
 
         }
@@ -66,7 +67,7 @@
         #endregion
 
         private System.Windows.Forms.Button btnRed;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnBlue;
     }
 }
 
